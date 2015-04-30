@@ -15,7 +15,10 @@ build() {
 
 package() {
   install -o root -g root -Dm755 "${srcdir}/${pkgname}" "${pkgdir}/usr/local/bin/${pkgname}"
-  install -o root -g root -Dm644 "${pkgname}.service" "${pkgdir}/etc/systemd/system/"
-  install -o root -g root -Dm644 "${pkgname}.conf" "${pkgdir}/etc/"
+  install -o root -g root -Dm644 "${pkgname}.service" "${pkgdir}/etc/systemd/system/${pkgname}.service"
+  install -o root -g root -Dm644 "${pkgname}.conf" "${pkgdir}/etc/${pkgname}.conf"
 }
 
+md5sums=('bfd45e92bf5760c616f93e9a30567a3d'
+         '20b16a9194f402f99613b69de67a16e2'
+         '56e92f031bf3e72c36ab0ccd7e2b4f88')
