@@ -1,0 +1,9 @@
+#!/bin/bash
+
+post_install() {
+  post_upgrade "${@}";
+}
+
+post_upgrade() {
+  systemctl daemon-reload
+}

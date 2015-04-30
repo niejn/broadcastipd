@@ -1,0 +1,11 @@
+[Unit]
+Description=Daemon to broadcast UDP packet messages to an entire network
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/broadcastipd.conf
+ExecStart=/usr/local/bin/broadcastipd ${DGRAM_MESSAGE} ${DGRAM_PORT} ${DGRAM_SLEEP_SEC}
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
