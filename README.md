@@ -10,7 +10,7 @@ Required Packages for Building
 
 Building
 --------
-Run `updpkgsums` to generate the checksum followed by `makepkg` to build the package.
+Make sure you have `base-devel` installed and run `makepkg` to build the package.
 
 Installing
 ----------
@@ -23,4 +23,4 @@ Usage
 The protocol is quite simple. `broadcastipd` broadcasts a datagram package with a given port and message.
 It sends the message continuously in a loop with a given sleep period between each package.
 
-See for further details also the package `whereisip`.
+See for further details also the package [mkinitcpio-multiflash](https://github.com/j54n1n/alarm-mkinitcpio-multiflash).
