@@ -18,7 +18,7 @@ Install the package via `sudo pacman -U broadcastipd*.pkg.tar.xz`
 
 Usage
 -----
-`broadcastipd <dgram_message> <dgram_port> <dgram_sleep_sec>`
+You can use it either manually via `broadcastipd <dgram_message> <dgram_port> <dgram_sleep_sec>` or as a service with the configuration settings from `broadcastipd.conf` via `systemctl start|stop broadcastipd`.
 
 The protocol is quite simple. `broadcastipd` broadcasts a datagram package with a given port and message.
 It sends the message continuously in a loop with a given sleep period between each package.
