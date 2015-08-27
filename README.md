@@ -23,4 +23,4 @@ You can use it either manually via `broadcastipd <dgram_message> <dgram_port> <d
 The protocol is quite simple. `broadcastipd` broadcasts a datagram package with a given port and message.
 It sends the message continuously in a loop with a given sleep period between each package.
 
-See for further details also the package [mkinitcpio-multiflash](https://github.com/j54n1n/alarm-mkinitcpio-multiflash).
+See for further details also the package [mkinitcpio-multiflash](https://github.com/unibz-bobo/mkinitcpio-multiflash).
